@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Giovanny Garzón Soto | Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Mixpanel -->
+    <script type="text/javascript">
+        (function (f, b) {
+            if (!b.__SV) {
+                var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
+                    function g(a, d) { var b = d.split("."); 2 == b.length && (a = a[b[0]], d = b[1]); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))) } } var a = b; "undefined" !== typeof c ? a = b[c] = [] : c = "mixpanel"; a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d }; a.people.toString = function () { return a.toString(1) + ".people (stub)" }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+                    for (h = 0; h < i.length; h++)g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]) } } for (var d = {}, e = ["get_group"].concat(Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++)b(j[c]); return d }; b._i.push([e, f, c])
+                }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init('148f1c5ea59382f952abdecdf1667ec1', { debug: true, track_pageview: true, persistence: 'localStorage' });
+        mixpanel.track('Visit Page')
+    </script>
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">GG</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mí</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Giovanny Garzón</h1>
+            <h2 style="margin-top: 12px;">Desarrollador Fullstack</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/giovannygarzon" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/giovannygarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p>
+                Hola! mi nombre es Giovanny, la primera véz que ví código intentaba modificar un juego de PlayStation, el magnifico Megaman x5, ejecute un programa cual mostraba el contenido del disco, quedé anonadado, ahora sé que todo lo que contemple estaba escrito en C#.
+                
+            </p>
+            <p>
+                Como programador y entusiasta de la tecnología he realizado paginas y aplicaciones web para clientes/colegas que han logrado ser un plus en sus negocios.
+                Actualmente soy un Desarrollador Fullstack de 28 años, que se encuentra 
+                desarrollando cada día lo que alguna véz imaginó.
+            </p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos</h3>
+                    <ul>
+                        <!-- <li>
+                            <strong>Teléfono</strong>
+                            +569 2600 3630
+                        </li> -->
+                        <li>
+                            <strong>Correo</strong>
+                            giovannygarzonsoto@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <!-- <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>MANGAS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <a href="img/cv.pdf" target="_blank">
+                Descargar Curriculum <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería en Informática</h4>
+                        <span class="casa">Instituto Profesional Inacap</span>
+                        <span class="fecha">2016 - 2021</span>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p> -->
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Soporte Técnico</h4>
+                        <span class="casa">Soluciones Informáticas Caldera</span>
+                        <span class="fecha">2019</span>
+                        <p>Brindar soluciones de soporte a usuarios, desde instalación de programas, recuperación de
+                            datos de discos, instalación de sistemas operativos tanto windows como Linux y mantenimiento
+                            de hardware.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador de Software</h4>
+                        <span class="casa">GPS Global</span>
+                        <span class="fecha">2022</span>
+                        <p>Desarrollador fullstack utilizando Quasar para aplicaciones moviles y Vue.js, Laravel, Node.js y Nest.js para
+                            desarrollar aplicaciones web. Mis responsabilidades incluyeron la creación de
+                            componentes, la corrección de errores, el desarrollo de nuevas funcionalidades
+                            y refactorización de código.</p>
+                        <div class="conectord">
+                            <div id="portfolio" class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Desarrollador Fullstack</h4>
+                        <span class="casa">Adtopia</span>
+                        <span class="fecha">2023</span>
+                        <p>Desarrollador fullstack utilizando Laravel para
+                            desarrollo aplicaciones web. Mis responsabilidades incluyeron la creacion de endpoints ,mantencion de bases de datos mysql y desarrollo de interfaces de usuario con Blade y SCSS.</p>
+                        <div class="conectord">
+                            <div id="portfolio" class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="portfolio" class="portfolio">
+        <h2 class="title">Portafolio</h2>
+        <div class="item">
+            <h3>Clon Manga Plus</h3>
+            <a target="_blank" href="https://github.com/GiovannyGarzonSoto/manga-app-express-mongo"><i
+                    class="fa-brands fa-github"></i> manga-api-node-mongo</a>
+            <a target="_blank" href="https://github.com/GiovannyGarzonSoto/manga-app-vue3-ts"><i
+                    class="fa-brands fa-github"></i> manga-app-vue3-scss</a>
+            <p class="text">
+                Este proyecto es un Clon de la pagina MangaPlus la cual sirve para leer mangas de manera online. Las tecnologías utilizadas en el proyecto fueron:
+                <br>
+                <strong>Frontend:</strong> Vue.js 3 con CompositionAPI, TypeScript, Axios y SCSS.
+                <br>
+                <strong>Backend:</strong> Node.js 18, TypeScript, Express, MongoDB, mongoose y Cloudinary para el manejo y almacenamiento de imagenes.
+                <br>
+                El despliegue del backend fue realizado en Railway, el cual proporciona una capa gratuita muy versátil. Para el frontend, utilicé Netlify, el cual de la misma manera incluye una capa gratuita.
+                <br>
+                Ir a la App: <a href="https://amazing-caramel-5e90cf.netlify.app" target="_blank">MangaApp</a>
+            </p>
+            <img class="img" src="img/1.png" alt="main">
+            <img class="img" src="img/2.png" alt="main">
+            <img class="img" src="img/3.png" alt="main">
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/giovannygarzon" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/giovannygarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
