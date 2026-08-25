@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanny Garzón Soto | Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Giovanny Garzón Soto | Portafolio</title>
     <link rel="stylesheet" href="style.css">
     <!-- Mixpanel -->
     <script type="text/javascript">
@@ -26,138 +29,178 @@
 </head>
 
 <body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">GG</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">Sobre Mí</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+
+    <!-- HEADER / NAV -->
+    <header class="header">
+        <div class="header__inner">
+            <a href="#hero" class="header__logo">GG<span class="blink">_</span></a>
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link">Inicio</a></li>
+                    <li><a href="#about" class="nav__link">Sobre Mí</a></li>
+                    <li><a href="#experience" class="nav__link">Experiencia</a></li>
+                    <li><a href="#projects" class="nav__link">Proyectos</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
 
-    <!-- SECCION INICIO -->
-    <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="img/hero.jpg" alt="">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="terminal reveal">
+            <div class="terminal__bar">
+                <span class="terminal__dot terminal__dot--red"></span>
+                <span class="terminal__dot terminal__dot--yellow"></span>
+                <span class="terminal__dot terminal__dot--green"></span>
+                <span class="terminal__title">giovanny@portfolio:~</span>
             </div>
-            <h1>Giovanny Garzón</h1>
-            <h2 style="margin-top: 12px;">Fullstack Developer</h2>
-            <div class="redes">
-                <a href="https://github.com/giovannygarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://github.com/giovannyandresgarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <div class="terminal__body">
+                <div class="hero__content">
+                    <img src="img/hero.jpg" alt="Giovanny Garzón" class="hero__photo">
+                    <h1 class="hero__name">Giovanny Garzón</h1>
+                    <p class="hero__role">&gt; <span id="typing"></span><span class="cursor">_</span></p>
+                    <div class="hero__links">
+                        <a href="https://github.com/giovannygarzonsoto" target="_blank" class="hero__link">
+                            <i class="fa-brands fa-github"></i> github
+                        </a>
+                        <a href="https://github.com/giovannyandresgarzonsoto" target="_blank" class="hero__link">
+                            <i class="fa-brands fa-github"></i> github-2
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCION SOBRE MI -->
-    <section id="sobremi" class="sobremi">
-        <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
-            <p>
-                Mi fascinación por el código y el desarrollo de productos comenzó de manera inesperada: intentando modificar un juego de PlayStation sin conocimientos previos. Al ejecutar un programa que revelaba el contenido del disco, quedé cautivado por ese universo de texto y caracteres desconocidos. Hoy sé que aquello que despertó mi curiosidad estaba escrito en C++.
-            </p>
-            <p>
-                Como desarrollador Fullstack de 30 años, combino pasión y técnica para construir soluciones digitales que impulsan negocios. He creado aplicaciones y sitios web que se convierten en un verdadero diferencial para mis clientes. Mi día a día es un viaje de aprendizaje constante, materializando cada día aquello que alguna vez solo imaginé.
-            </p>
-            <div class="fila">
-                <div class="col">
-                    <h3>Datos</h3>
-                    <ul>
-                        <li>
-                            <strong>Correo</strong>
-                            giovannygarzonsoto@gmail.com
-                        </li>
-                    </ul>
+    <!-- SOBRE MÍ -->
+    <section class="section" id="about">
+        <div class="container reveal">
+            <div class="readme">
+                <div class="readme__header">
+                    <span class="readme__hash">#</span> Sobre Mí
+                </div>
+                <div class="readme__content">
+                    <blockquote class="readme__quote">
+                        Mi fascinación por el código y el desarrollo de productos comenzó de manera inesperada: intentando modificar un juego de PlayStation sin conocimientos previos. Al ejecutar un programa que revelaba el contenido del disco, quedé cautivado por ese universo de texto y caracteres desconocidos. Hoy sé que aquello que despertó mi curiosidad estaba escrito en C++.
+                    </blockquote>
+                    <p class="readme__text">
+                        Como desarrollador Fullstack de 30 años, combino pasión y técnica para construir soluciones digitales que impulsan negocios. He creado aplicaciones y sitios web que se convierten en un verdadero diferencial para mis clientes. Mi día a día es un viaje de aprendizaje constante, materializando cada día aquello que alguna vez solo imaginé.
+                    </p>
+                    <div class="readme__info">
+                        <div class="readme__info-item">
+                            <span class="readme__info-label">&gt;Correo</span>
+                            <span class="readme__info-value">giovannygarzonsoto@gmail.com</span>
+                        </div>
+                    </div>
+                    <a href="img/cv.pdf" target="_blank" class="btn">
+                        <i class="fa-solid fa-download"></i> Descargar CV
+                    </a>
                 </div>
             </div>
-            <a href="img/cv.pdf" target="_blank">
-                Descargar Curriculum <i class="fa-solid fa-download"></i>
-                <span class="overlay"></span>
-            </a>
         </div>
     </section>
 
-    <!-- SECCION CURRICULUM -->
-    <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Ingeniería en Informática</h4>
-                        <span class="casa">Instituto Profesional Inacap</span>
-                        <span class="fecha">2016 - 2021</span>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
+    <!-- EXPERIENCIA -->
+    <section class="section section--alt" id="experience">
+        <div class="container reveal">
+            <div class="section__header">
+                <span class="section__tag">[EXPERIENCIA]</span>
+                <h2 class="section__title">Trayectoria</h2>
+            </div>
+            <div class="timeline">
+                <!-- EDUCACIÓN -->
+                <div class="timeline__block">
+                    <h3 class="timeline__label">&lt; Educaci&oacute;n /&gt;</h3>
+                    <div class="timeline__item">
+                        <div class="timeline__line"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2016 — 2021</span>
+                            <h4 class="timeline__role">Ingeniería en Informática</h4>
+                            <span class="timeline__company">Instituto Profesional Inacap</span>
                         </div>
                     </div>
                 </div>
+                <!-- EXPERIENCIA LABORAL -->
+                <div class="timeline__block">
+                    <h3 class="timeline__label">&lt; Experiencia Laboral /&gt;</h3>
 
-                <div class="col derecha">
-                    <h3>Experiencia Laboral</h3>
-
-                    <!-- BravoERP 2025 -->
-                    <div class="item der">
-                        <h4>Desarrollador Fullstack</h4>
-                        <span class="casa">Informática Casa Grande</span>
-                        <span class="fecha">2025 - Actualidad</span>
-                        <p>
-                            Migré una arquitectura monolítica con bases de datos unificadas a un modelo multi-tenant con más de 40 clientes reales en producción. Diseñé un middleware que, según el cliente asignado al usuario, redirige automáticamente a su base de datos específica, evitando crecimiento exponencial de datos y asegurando la integridad de los mismos. Implementé un sistema de 3 niveles de rol que permite al equipo de soporte visualizar y operar como cualquier cliente sin necesidad de cuentas separadas, reduciendo el tiempo de resolución de incidencias en más de un 60%. Desarrollo de visualización de compras y ventas con agregación mensual, utilizado diariamente por equipos contables de múltiples sucursales. Vue 3 (Composition API), TypeScript, Laravel 11, MySQL y TailwindCSS.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                    <div class="timeline__item">
+                        <div class="timeline__line"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2025 — Actualidad</span>
+                            <h4 class="timeline__role">Desarrollador Fullstack</h4>
+                            <span class="timeline__company">Informática Casa Grande</span>
+                            <p class="timeline__desc">
+                                Migré una arquitectura monolítica con bases de datos unificadas a un modelo multi-tenant con más de 40 clientes reales en producción. Diseñé un middleware que, según el cliente asignado al usuario, redirige automáticamente a su base de datos específica. Implementé un sistema de 3 niveles de rol que permite al equipo de soporte visualizar y operar como cualquier cliente, reduciendo el tiempo de resolución de incidencias en más de un 60%.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="tag">Vue 3</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Laravel 11</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">TailwindCSS</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Servicio de Salud Atacama -->
-                    <div class="item der">
-                        <h4>Desarrollador Fullstack</h4>
-                        <span class="casa">Servicio de Salud Atacama - Sistemas Activos</span>
-                        <span class="fecha">2024</span>
-                        <p>
-                            Desarrollé un sistema para automatizar procesos de gerencia a nivel regional, en respuesta al Decreto Presidencial de Copago Cero, entre otros. La plataforma permitió gestionar la validación masiva de datos con estándares exigidos por el gobierno. Implementé autenticación segura, carga y validación de archivos estructurados. Esto redujo procesos manuales que antes tomaban horas de procesamiento. C#, .NET, SQL Server y JavaScript.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                    <div class="timeline__item">
+                        <div class="timeline__line"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2024</span>
+                            <h4 class="timeline__role">Desarrollador Fullstack</h4>
+                            <span class="timeline__company">Servicio de Salud Atacama — Sistemas Activos</span>
+                            <p class="timeline__desc">
+                                Desarrollé un sistema para automatizar procesos de gerencia a nivel regional, en respuesta al Decreto Presidencial de Copago Cero. La plataforma permitió gestionar la validación masiva de datos con estándares exigidos por el gobierno. Implementé autenticación segura, carga y validación de archivos estructurados, reduciendo procesos manuales que antes tomaban horas.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- Adtopia 2023 -->
-                    <div class="item der">
-                        <h4>Desarrollador Fullstack</h4>
-                        <span class="casa">Adtopia</span>
-                        <span class="fecha">2023</span>
-                        <p>
-                            Encargado de la migración completa de un sistema Symfony a Laravel, incluyendo la reconstrucción de interfaces con Blade y CSS personalizado. El proyecto implicó replicar funcionalidades críticas sin interrupción del servicio, asegurando la continuidad operativa del negocio. Stack: Laravel, Blade, SCSS y MySQL.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                    <div class="timeline__item">
+                        <div class="timeline__line"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2023</span>
+                            <h4 class="timeline__role">Desarrollador Fullstack</h4>
+                            <span class="timeline__company">Adtopia</span>
+                            <p class="timeline__desc">
+                                Encargado de la migración completa de un sistema Symfony a Laravel, incluyendo la reconstrucción de interfaces con Blade y CSS personalizado. El proyecto implicó replicar funcionalidades críticas sin interrupción del servicio.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">Blade</span>
+                                <span class="tag">SCSS</span>
+                                <span class="tag">MySQL</span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- GPS Global 2022 -->
-                    <div class="item der">
-                        <h4>Desarrollador de Software</h4>
-                        <span class="casa">GPS Global</span>
-                        <span class="fecha">2022</span>
-                        <p>
-                            Identifiqué y resolví cuellos de botella críticos en consultas SQL y en el código JavaScript del lado del cliente. Mediante refactorización y optimización de consultas Eloquent, logré reducir los tiempos de carga de módulos clave, mejorando la experiencia de usuarios finales en operaciones diarias. Stack: Vue.js, Laravel, Node.js, Nest.js, MySQL y MongoDB.
-                        </p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
+                    <div class="timeline__item">
+                        <div class="timeline__line"></div>
+                        <div class="timeline__content">
+                            <span class="timeline__date">2022</span>
+                            <h4 class="timeline__role">Desarrollador de Software</h4>
+                            <span class="timeline__company">GPS Global</span>
+                            <p class="timeline__desc">
+                                Identifiqué y resolví cuellos de botella críticos en consultas SQL y en el código JavaScript del lado del cliente. Mediante refactorización y optimización de consultas Eloquent, logré reducir los tiempos de carga de módulos clave.
+                            </p>
+                            <div class="timeline__tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Laravel</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Nest.js</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -166,56 +209,95 @@
     </section>
 
     <!-- PORTAFOLIO -->
-    <div id="portfolio" class="portfolio">
-        <h2 class="title">Portafolio</h2>
-        <div class="item">
-            <h3>Dte BravoERP</h3>
-            <p class="text">
-                Plataforma para la visualización de Documentos Tributarios Electrónicos (DTE), para los sistemas de caja de múltiples sucursales. Un sistema crítico para la trazabilidad fiscal y financiera.
-                Implementé un middleware que dependiendo del cliente seleccionado apunta automáticamente a su base de datos específica, permitiendo aislamiento y escalabilidad.
-                Administración de usuarios con roles.
-                Visualización de compras y ventas totales con agregación mensual.
-                <br>
-                Frontend: Vue.js 3 (Composition API), TypeScript, Fetch API, TailwindCSS.
-                <br>
-                Backend: Laravel 11, MySQL, Eloquent ORM.
-                <br><br>
-                🔗 <strong>Demo:</strong> <a href="https://dte.bravoerp.com" target="_blank">dte.bravoerp.com</a>
-            </p>
-            <img class="img" src="img/bravoerp.png" alt="Dte BravoERP Dashboard">
-        </div>
+    <section class="section" id="projects">
+        <div class="container reveal">
+            <div class="section__header">
+                <span class="section__tag">[PORTAFOLIO]</span>
+                <h2 class="section__title">Proyectos</h2>
+            </div>
+            <div class="projects">
+                <!-- PROYECTO 1 -->
+                <article class="project">
+                    <div class="project__preview">
+                        <img src="img/bravoerp.png" alt="Dte BravoERP Dashboard" class="project__img">
+                        <div class="project__overlay">
+                            <span class="project__overlay-text">&gt; Ver demo</span>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__header">
+                            <span class="project__number">01</span>
+                            <h3 class="project__title">Dte BravoERP</h3>
+                        </div>
+                        <p class="project__desc">
+                            Plataforma para la visualización de Documentos Tributarios Electrónicos (DTE), para los sistemas de caja de múltiples sucursales. Middleware multi-tenant con aislamiento y escalabilidad. Administración de usuarios con roles. Visualización de compras y ventas totales con agregación mensual.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Vue.js 3</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">TailwindCSS</span>
+                            <span class="tag">Laravel 11</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://dte.bravoerp.com" target="_blank" class="project__link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo en vivo
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-        <div class="item">
-            <h3>Clon Manga Plus</h3>
-            <a target="_blank" href="https://github.com/GiovannyGarzonSoto/manga-app-express-mongo"><i
-                    class="fa-brands fa-github"></i> manga-api-node-mongo</a>
-            <a target="_blank" href="https://github.com/GiovannyGarzonSoto/manga-app-vue3-ts"><i
-                    class="fa-brands fa-github"></i> manga-app-vue3-scss</a>
-            <p class="text">
-                Un clon funcional de MangaPlus, una plataforma moderna para la lectura de mangas en línea. Este proyecto demuestra un flujo de trabajo fullstack completo:
-                <br>
-                Frontend: Construido con Vue.js 3 (Composition API), TypeScript para tipado seguro, Axios para peticiones HTTP y SCSS para estilos avanzados.
-                <br>
-                Backend: API robusta desarrollada con Node.js 18, TypeScript, Express, MongoDB, Mongoose y Cloudinary para la gestión eficiente de imágenes.
-                <br>
-                Despliegue: Backend alojado en Railway y frontend en Netlify, aprovechando sus capas gratuitas para un rendimiento óptimo.
-                <br>
-                🔗 <strong>Demo:</strong> <a href="https://lucky-puppy-3f4076.netlify.app" target="_blank">MangaApp</a>
-            </p>
-            <img class="img" src="img/1.png" alt="main">
-            <img class="img" src="img/2.png" alt="main">
-            <img class="img" src="img/3.png" alt="main">
+                <!-- PROYECTO 2 -->
+                <article class="project">
+                    <div class="project__preview project__preview--gallery">
+                        <img src="img/1.png" alt="MangaPlus screenshot 1" class="project__img">
+                        <img src="img/2.png" alt="MangaPlus screenshot 2" class="project__img">
+                        <img src="img/3.png" alt="MangaPlus screenshot 3" class="project__img">
+                        <div class="project__overlay">
+                            <span class="project__overlay-text">&gt; Ver demo</span>
+                        </div>
+                    </div>
+                    <div class="project__info">
+                        <div class="project__header">
+                            <span class="project__number">02</span>
+                            <h3 class="project__title">Clon Manga Plus</h3>
+                        </div>
+                        <p class="project__desc">
+                            Un clon funcional de MangaPlus, una plataforma moderna para la lectura de mangas en línea. Frontend construido con Vue.js 3 (Composition API), TypeScript, Axios y SCSS. Backend con Node.js 18, TypeScript, Express, MongoDB, Mongoose y Cloudinary para gestión de imágenes.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Vue.js 3</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">SCSS</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://lucky-puppy-3f4076.netlify.app" target="_blank" class="project__link">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo
+                            </a>
+                            <a href="https://github.com/GiovannyGarzonSoto/manga-app-express-mongo" target="_blank" class="project__link">
+                                <i class="fa-brands fa-github"></i> Backend
+                            </a>
+                            <a href="https://github.com/GiovannyGarzonSoto/manga-app-vue3-ts" target="_blank" class="project__link">
+                                <i class="fa-brands fa-github"></i> Frontend
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- footer -->
-    <footer>
-        <a href="#inicio" class="arriba">
-            <i class="fa-solid fa-angles-up"></i>
-        </a>
-        <div class="redes">
-            <a href="https://github.com/giovannygarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://github.com/giovannyandresgarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__links">
+                <a href="https://github.com/giovannygarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/giovannyandresgarzonsoto" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <p class="footer__eof">Desarrollado por Giovanny Garzón 2026</p>
         </div>
     </footer>
 
