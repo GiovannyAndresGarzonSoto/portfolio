@@ -492,6 +492,75 @@ img { max-width: 100%; height: auto; display: block; }
     gap: 6px;
 }
 
+/* ---- SKILLS / MARQUEE ---- */
+.marquee {
+    overflow: hidden;
+    padding: 24px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-elevated);
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.marquee__track {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.marquee__row {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 28s linear infinite;
+}
+
+.marquee__row--reverse {
+    animation-direction: reverse;
+}
+
+.marquee__group {
+    display: flex;
+    gap: 16px;
+    padding-right: 16px;
+}
+
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text);
+    white-space: nowrap;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.skill img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: invert(0.75) brightness(1.2);
+    transition: filter 0.2s;
+}
+
+.skill:hover img {
+    filter: invert(0.85) sepia(1) saturate(5) hue-rotate(10deg);
+}
+
+.skill:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
 /* ---- PROJECTS ---- */
 .projects {
     display: grid;

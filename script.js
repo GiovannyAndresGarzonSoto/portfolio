@@ -85,9 +85,7 @@
     const typingEl = document.getElementById('typing');
     if (typingEl) {
         const phrases = [
-            'Fullstack Developer',
-            'Vue.js / Laravel',
-            'TypeScript',
+            'Disponible para nuevos desafíos',
             'Construyo soluciones digitales'
         ];
         let phraseIndex = 0;
@@ -122,6 +120,24 @@
 
         // Start typing after a short delay
         setTimeout(type, 800);
+    }
+
+    // ---- MARQUEE PAUSE ON HOVER ----
+    const marquee = document.querySelector('.marquee');
+    if (marquee) {
+        marquee.addEventListener('mouseenter', () => {
+            marquee.querySelectorAll('.marquee__row').forEach(row => row.style.animationPlayState = 'paused');
+        });
+        marquee.addEventListener('mouseleave', () => {
+            marquee.querySelectorAll('.marquee__row').forEach(row => row.style.animationPlayState = 'running');
+        });
+    }
+
+    // ---- REDUCED MOTION ----
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (prefersReducedMotion.matches) {
+        const rows = document.querySelectorAll('.marquee__row');
+        rows.forEach(row => row.style.animation = 'none');
     }
 
 })();
