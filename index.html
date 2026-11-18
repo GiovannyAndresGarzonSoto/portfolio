@@ -220,12 +220,184 @@
                 <!-- PROYECTO 1 -->
                 <article class="project">
                     <div class="project__preview">
+                        <img src="img/restoapp.png" alt="Panel de mesas de RestoApp" class="project__img">
+                    </div>
+                    <div class="project__info">
+                        <div class="project__header">
+                            <span class="project__number">01</span>
+                            <h3 class="project__title">RestoApp</h3>
+                        </div>
+                        <p class="project__desc">
+                            POS multi-tenant para restaurantes: locales, salones, mesas, garzones, pedidos y pagos en una sola plataforma. Frontend Nuxt 4 (SPA) y API Nitro sobre PostgreSQL/Neon, con roles, sesiones HttpOnly y sincronización de mesas en tiempo real vía WebSocket.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tag">Nuxt 4</span>
+                            <span class="tag">Vue 3</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">WebSocket</span>
+                        </div>
+                        <div class="project__credentials">
+                            <span class="project__credentials-label">Credenciales</span>
+                            <div class="project__credentials-grid">
+                                <div class="project__credential">
+                                    <span class="project__credential-key">usuario</span>
+                                    <code>usuarioadmin@restoapp.com</code>
+                                </div>
+                                <div class="project__credential">
+                                    <span class="project__credential-key">clave</span>
+                                    <code>123123123</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project__links">
+                            <a href="https://resto-app-nuxt-production.up.railway.app/" target="_blank" rel="noopener noreferrer" class="project__link">
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Demostración
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- GALERÍA RESTOAPP -->
+                    <details class="project__gallery">
+                        <summary class="project__gallery-head">
+                            <span class="project__gallery-title">
+                                <span class="project__gallery-label">[GALERÍA]</span>
+                                <span class="project__gallery-count">16 capturas</span>
+                            </span>
+                            <span class="project__gallery-toggle">
+                                <span class="project__gallery-toggle-close">Contraer</span>
+                                <span class="project__gallery-toggle-open">Expandir</span>
+                                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                            </span>
+                        </summary>
+                        <div class="project__gallery-body">
+                            <div class="gallery__grid">
+                                <button type="button" class="gallery__item" data-full="img/restoapp/01-dashboard-desktop-light.png" data-caption="Inicio">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/01-dashboard-desktop-light.png" alt="Inicio de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">01</span> Inicio</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/02-stores-desktop-light.png" data-caption="Locales y Cajas">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/02-stores-desktop-light.png" alt="Locales y Cajas de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">02</span> Locales y Cajas</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/03-shifts-desktop-light.png" data-caption="Turnos">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/03-shifts-desktop-light.png" alt="Turnos de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">03</span> Turnos</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/04-orders-desktop-light.png" data-caption="Historial">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/04-orders-desktop-light.png" alt="Historial de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">04</span> Historial</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/05-halls-desktop-light.png" data-caption="Salones y Mesas">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/05-halls-desktop-light.png" alt="Salones y Mesas de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">05</span> Salones y Mesas</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/06-categories-desktop-light.png" data-caption="Carta">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/06-categories-desktop-light.png" alt="Carta de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">06</span> Carta</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/07-waiters-desktop-light.png" data-caption="Camareros">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/07-waiters-desktop-light.png" alt="Camareros de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">07</span> Camareros</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/08-users-desktop-light.png" data-caption="Usuarios">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/08-users-desktop-light.png" alt="Usuarios de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">08</span> Usuarios</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/09-connections-desktop-light.png" data-caption="Conexiones y Clientes">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/09-connections-desktop-light.png" alt="Conexiones y Clientes de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">09</span> Conexiones y Clientes</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/10-profile-desktop-light.png" data-caption="Perfil">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/10-profile-desktop-light.png" alt="Perfil de RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">10</span> Perfil</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/dialog-pos-table-free-desktop-light.png" data-caption="Inicio · Turno abierto">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/dialog-pos-table-free-desktop-light.png" alt="Inicio de RestoApp con turno abierto" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">11</span> Inicio · Turno abierto</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/dialog-stores-add-desktop-light.png" data-caption="Nuevo Local">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/dialog-stores-add-desktop-light.png" alt="Formulario para crear un nuevo local en RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">12</span> Nuevo Local</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/dialog-halls-add-desktop-light.png" data-caption="Nuevo Salón">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/dialog-halls-add-desktop-light.png" alt="Formulario para crear un nuevo salón en RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">13</span> Nuevo Salón</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/dialog-categories-add-desktop-light.png" data-caption="Nueva Categoría">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/dialog-categories-add-desktop-light.png" alt="Formulario para crear una nueva categoría en RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">14</span> Nueva Categoría</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/dialog-waiters-add-desktop-light.png" data-caption="Nuevo Camarero">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/dialog-waiters-add-desktop-light.png" alt="Formulario para crear un nuevo camarero en RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">15</span> Nuevo Camarero</span>
+                                </button>
+
+                                <button type="button" class="gallery__item" data-full="img/restoapp/dialog-users-add-desktop-light.png" data-caption="Nuevo Usuario">
+                                    <span class="gallery__media">
+                                        <img src="img/restoapp/dialog-users-add-desktop-light.png" alt="Formulario para crear un nuevo usuario en RestoApp" loading="lazy">
+                                    </span>
+                                    <span class="gallery__caption"><span class="gallery__index">16</span> Nuevo Usuario</span>
+                                </button>
+                            </div>
+                        </div>
+                    </details>
+                </article>
+
+                <!-- PROYECTO 2 -->
+                <article class="project">
+                    <div class="project__preview">
                         <img src="img/bravoerp.png" alt="Dte BravoERP Dashboard" class="project__img">
 
                     </div>
                     <div class="project__info">
                         <div class="project__header">
-                            <span class="project__number">01</span>
+                            <span class="project__number">02</span>
                             <h3 class="project__title">Dte BravoERP</h3>
                         </div>
                         <p class="project__desc">
@@ -246,7 +418,7 @@
                     </div>
                 </article>
 
-                <!-- PROYECTO 2 -->
+                <!-- PROYECTO 3 -->
                 <article class="project">
                     <div class="project__preview project__preview--gallery">
                         <img src="img/1.png" alt="MangaPlus screenshot 1" class="project__img">
@@ -256,7 +428,7 @@
                     </div>
                     <div class="project__info">
                         <div class="project__header">
-                            <span class="project__number">02</span>
+                            <span class="project__number">03</span>
                             <h3 class="project__title">Clon Manga Plus</h3>
                         </div>
                         <p class="project__desc">
@@ -370,6 +542,31 @@
             <p class="footer__eof">Desarrollado por Giovanny Garzón 2026</p>
         </div>
     </footer>
+
+    <!-- LIGHTBOX GALERÍA -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galería de RestoApp" hidden>
+        <div class="lightbox__toolbar">
+            <span class="lightbox__counter" id="lightbox-counter">01 / 16</span>
+            <div class="lightbox__actions">
+                <button type="button" class="lightbox__btn" id="lightbox-zoom" aria-label="Acercar imagen" aria-pressed="false">
+                    <i class="fa-solid fa-magnifying-glass-plus" aria-hidden="true"></i>
+                </button>
+                <button type="button" class="lightbox__btn" id="lightbox-close" aria-label="Cerrar galería">
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightbox-prev" aria-label="Captura anterior">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+        </button>
+        <div class="lightbox__stage" id="lightbox-stage">
+            <img class="lightbox__img" id="lightbox-img" alt="">
+        </div>
+        <button type="button" class="lightbox__nav lightbox__nav--next" id="lightbox-next" aria-label="Captura siguiente">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+        </button>
+        <p class="lightbox__caption" id="lightbox-caption"></p>
+    </div>
 
     <script src="script.js"></script>
 </body>
